@@ -6,7 +6,7 @@ class TkinterImplementation:
     window = Tk()
     window.title(window_title)
     window.geometry(aspect_ratio)
-    window.mainloop()
+    
 
   def New_Label(text, grid_column, grid_row):
     new_label = Label(window, text=text)
@@ -22,3 +22,7 @@ class TkinterImplementation:
   def New_Button(button_text, button_command, grid_column, grid_row):
     new_button = Button(window, text=button_text, command=button_command)
     new_button.grid(column=2, row=0)
+
+  def MainLoop():
+    window.mainloop()
+    
